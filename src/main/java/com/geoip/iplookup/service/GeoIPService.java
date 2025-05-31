@@ -23,7 +23,7 @@ public class GeoIPService {
 
     public GeoIPResponse lookup(String ip) {
         try {
-            Thread.sleep(10);
+            Thread.sleep(20);
 
             InetAddress ipAddress = InetAddress.getByName(ip);
             CityResponse response = dbReader.city(ipAddress);
